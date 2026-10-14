@@ -55,6 +55,11 @@
 		  }
 		}
 		</script>
+		<script>
+        document.querySelectorAll("[DiscLink]").forEach(link => {
+            link.href = DISCORD_SERVER_URL + link.dataset.link;
+        });
+    </script>
 	</head>
 	<body>
 		<h1>M O W</h1>
