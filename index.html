@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <script>
+			const DISCORD_SERVER_URL = "https://discord.gg/skB6H8udH5";
+		</script>
+		<meta http-equiv="refresh" content="0; url=http://blep.moe"/>
+		
+		<!-- Open Graph Fallback (Required by Discord) -->
+		<meta property="og:title" content="Contenentia!DiscLink" />
+		<meta property="og:url" content="https://contenentia.moe/" />
+		<meta name="theme-color" content="#584AFF" />
+		<!-- Discord Component Embed Payload -->
+		<script id="discord:component-embed" type="application/json">
+		{
+		  "component": {
+			"type": 17,
+			"accent_color": 5786367,
+			"spoiler": false,
+			"components": [
+			  {
+				"type": 9,
+				"components": [
+				  {
+					"type": 10,
+					"content": "# **[Contenentia!](DiscLink)**\nContenentia is a community focused on hosting various events for the entertainment of people worldwide!"
+				  }
+				],
+				"accessory": {
+				  "type": 11,
+				  "media": {
+					"url": "https://contenentia.github.io/cdn/images/currentLogo128x.png"
+				  }
+				}
+			  },
+			  {
+				"type": 14
+			  },
+			  {
+				"type": 9,
+				"components": [
+				  {
+					"type": 10,
+					"content": "💻 **discord here!**"
+				  }
+				],
+				"accessory": {
+				  "type": 2,
+				  "style": 5,
+				  "label": "Open Contenentia Discord Server!",
+				  "url": "DiscLink"
+				}
+			  }
+			]
+		  }
+		}
+		</script>
+	</head>
+	<body>
+		<h1>M O W</h1>
+	<script>
+        document.querySelectorAll("[DiscLink]").forEach(link => {
+            link.href = DISCORD_SERVER_URL + link.dataset.link;
+        });
+    </script>
+	</body>
+</html>
