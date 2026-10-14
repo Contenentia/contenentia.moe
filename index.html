@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	    <script>
-			const DISCORD_SERVER_URL = "https://discord.gg/skB6H8udH5";
-		</script>
-		<meta http-equiv="refresh" content="0; url=DiscLink"/>
+		<!--Edit this to change the discord URL :D Think of it kinda like a perma link provider-->
+	    <script> const DISCORD_SERVER_URL = "https://discord.gg/skB6H8udH5"; </script>
 		
+		<!--OK SO I THINK THIS MIGHT WORK? ABOVE IS A REDIRECT TO THE DISCORD AND BELOW IS ITS REFRENCE TO THE CONST ABOVE, IDK WHAT IM DOING PLEASE HELP ME I DONT HTML A A A A A A A A A A-->
+		<meta id="redirect" http-equiv="refresh"/>
+		<script> document.getElementById("DiscLink").content = `0; url=${DiscLink}`; </script>
+		
+		
+		<!--Below is stuff for discord embed stuff! -->
 		<!-- Open Graph Fallback (Required by Discord) -->
 		<meta property="og:title" content="Contenentia!DiscLink" />
 		<meta property="og:url" content="https://contenentia.moe/" />
-		<meta name="theme-color" content="#584AFF" />
+		<meta name="theme-color" content="#290E4D" />
 		<!-- Discord Component Embed Payload -->
 		<script id="discord:component-embed" type="application/json">
 		{
@@ -55,11 +59,6 @@
 		  }
 		}
 		</script>
-		<script>
-        document.querySelectorAll("[DiscLink]").forEach(link => {
-            link.href = DISCORD_SERVER_URL + link.dataset.link;
-        });
-    </script>
 	</head>
 	<body>
 		<h1>M O W</h1>
